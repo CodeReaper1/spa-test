@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div id="navbar">
+    <button class = "showHome">Home</button>
+    <button class = "showAbout">About</button>
+    <button class = "showServices">Services</button>
+    <button class = "showTestemonials">Testimonials</button>
+    <button class = "showContact">Contact</button>
+    </div>
+</header>
+  <script type="module" src="app.js"></script>
+
+  <main id="main">
+
+          <div class="view" id="view1">
+
+                <div class="view" id="view1">
+                <section class="hero">
+                  <h1>Welcome to Acme Corporation</h1>
+                  <img src="logo.png" alt="Acme Corporation logo">
+                </section>
+                
+                <section class="about">
+                  <h2>About Us</h2>
+                  <p>We are a leading provider of innovative solutions for the widget industry. Our team of experts can help you with all of your widget needs, from design to production to distribution.</p>
+                  <button class = "showAbout">About</button>
+                </section>
+                
+                <section class="services">
+                  <h2>Our Services</h2>
+                  <ul style="margin-bottom:2rem;">
+                    <li>Widget Design</li>
+                    <li>Widget Production</li>
+                    <li>Widget Distribution</li>
+                  </ul>
+                  <button class = "showServices">Services</button>
+                </section>
+                
+                <section class="testimonials">
+                  <h2>What Our Customers Say</h2>
+                  <blockquote>"Acme Corporation provided us with exceptional service and helped us launch our new widget product line. We couldn't be happier with the results!"</blockquote>
+                  <cite>- Jane Doe, CEO of Widget Co.</cite>
+                  <button class = "showTestemonials">Testimonials</button>
+                </section>
+                
+                <section class="contact">
+                  <h2>Contact Us</h2>
+                  <p>Ready to get started? Contact us today to learn more about our services and how we can help you with your widget needs.</p>
+                  <button class = "showContact">Get in touch</button>
+                </section>
+                </div>
+          </div>
+
+          <div class="view about" id="view2">
+            <section class="hero">
+                <h1>About Us</h1>
+              </section>
+        
+              <section class="about">
+                <h2>Our Story</h2>
+                <p>Acme Corporation was founded in 1985 by John Smith, a visionary entrepreneur with a passion for innovation. From our humble beginnings as a small garage-based startup, we have grown to become a leading provider of innovative solutions for the widget industry.</p>
+        
+                <p>Our team of experts is dedicated to providing the best possible service to our customers, from design to production to distribution. We believe that by putting our customers first and delivering exceptional quality, we can make a real difference in the world.</p>
+        
+                <h2>Our Mission</h2>
+                <p>At Acme Corporation, our mission is to help our customers succeed by providing innovative solutions that meet their unique needs. We are committed to delivering the highest quality products and services, while always putting our customers first.</p>
+        
+                <h2>Our Values</h2>
+                <ul>
+                  <li>Innovation</li>
+                  <li>Customer Service</li>
+                  <li>Quality</li>
+                  <li>Integrity</li>
+                  <li>Collaboration</li>
+                </ul>
+                <button onclick="showView(2)">about</button>
+              </section>
+        
+              <section class="contact">
+                <h2>Contact Us</h2>
+                <p>Ready to get started? Contact us today to learn more about our services and how we can help you with your widget needs.</p>
+                <a href="#">Get in touch</a>
+              </section>
+          </div>
+
+          <div class="view services" id="view3">
+
+              <section class="hero">
+                <h1>Our Services</h1>
+              </section>
+            
+              <section class="services">
+                <h2>What We Offer</h2>
+                <ul>
+                  <li>Widget Design</li>
+                  <li>Widget Production</li>
+                  <li>Widget Distribution</li>
+                </ul>
+                <button onclick="showView(3)">services</button>
+              </section>
+            
+              <section class="pricing">
+                <h2>Our Pricing</h2>
+                <p>At Acme Corporation, we believe in providing our customers with high-quality products and services at competitive prices. We offer a range of pricing options to suit your needs and budget, including:</p>
+                <ul>
+                  <li>Hourly rates</li>
+                  <li>Project-based pricing</li>
+                  <li>Monthly retainers</li>
+                </ul>
+              </section>
+            
+              <section class="testimonials">
+                <h2>What Our Customers Say</h2>
+                <blockquote>"Acme Corporation provided us with exceptional service and helped us launch our new widget product line. We couldn't be happier with the results!"</blockquote>
+                <cite>- Jane Doe, CEO of Widget Co.</cite>
+              </section>
+            
+              <section class="contact">
+                <h2>Contact Us</h2>
+                <p>Ready to get started? Contact us today to learn more about our services and how we can help you with your widget needs.</p>
+                <a href="#">Get in touch</a>
+              </section>
+            
+          </div>
+         
+          <div class="view testimonials" id="view4">
+            <section class="testimonials">
+              <h2>What Our Customers Say</h2>
+              <div class="testimonial">
+                <blockquote>
+                  <p>"Acme Corporation provided us with exceptional service and helped us launch our new widget product line. We couldn't be happier with the results!"</p>
+                  <cite>- Jane Doe, CEO of Widget Co.</cite>
+                </blockquote>
+              </div>
+              <div class="testimonial">
+                <blockquote>
+                  <p>"I was impressed by the professionalism and expertise of Acme Corporation's team. They delivered high-quality widget design and production services that helped us stay ahead of the competition."</p>
+                  <cite>- John Smith, CMO of Widget Solutions</cite>
+                </blockquote>
+              </div>
+            </section>
+          </div>
+
+          <div class="view contact" id="view5">
+              <h2>Contact Us</h2>
+              <p>Ready to get started? 
+                Contact us today to learn more about our services and how we can help you with your widget needs.
+              </p>
+              <form action="" method="POST">
+                <div class="form-group">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone:</label>
+                  <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                  <label for="message">Message:</label>
+                  <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+              </form>
+              <button onclick="showView(5)">contact</button>
+          </div>
+
+    </main>
+    
+  
+  </body>
+</html>
+
+
+
